@@ -42,6 +42,9 @@ export default {
     },
   },
   methods: {
+    cancel() {
+      this.$router.push('/');
+    },
     handleSubmit() {
       if (this.editMode) {
         axios.put(`http://localhost:3000/tasks/1`, this.localTask)

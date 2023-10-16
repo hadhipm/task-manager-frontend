@@ -50,7 +50,7 @@ export default {
       const confirmation = confirm('Are you sure you want to delete this task?');
 
       if (confirmation) {
-        axios.delete(`http://localhost:3000/tasks/3`)
+        axios.delete(`http://localhost:3000/delete-tasks/1`)
           .then(response => {
             console.log('Task deleted:',response);
             alert('Task successfully deleted!');
